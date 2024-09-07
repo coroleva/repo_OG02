@@ -1,13 +1,17 @@
-def factorial(n):
-    pass
-
 import math
 
-def circle_area(radius):
-    pass
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
+def circle_area(radius):
+    return math.pi * radius ** 2
 
 def average(numbers):
-    pass
+    return sum(numbers) / len(numbers) if numbers else 0
 
-print(factorial(5), circle_area(5),average(numbers=[10,20,30,40]))  # Output: 120
+
+
+
